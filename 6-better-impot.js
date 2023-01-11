@@ -19,7 +19,8 @@ app.listen(5000,() =>{
 
 
 /**
- * API - json     SSR-  template
- * Send data    send template
- * Res.JSON()   RES.Render()
+     * API - json     SSR-  template
+     * Send data    send template
+     * Res.JSON()   RES.Render()
+     * Server provide data for API
  */
