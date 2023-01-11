@@ -1,9 +1,4 @@
 const http = require('http')
-const {readFileSync} = require('fs')
-
-// get all files
-
-const homePage = readFileSync('./index.html')
 
 const server = http.createServer((req, res) => {
     // method user performing
@@ -14,8 +9,15 @@ const server = http.createServer((req, res) => {
     const url = req.url
     if(url == '/'){
 
+    // pass header .writeHead(statusCode, { metatype})
+    // metatype is what being sent
+    // list of MIME type https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+    // 200 is status ok
+    // list of status code https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
     res.writeHead(200,{'content-type': 'text/html'})
-    res.write(homePage)
+    res.write('<h1> Welcome to the home page</h1>')
+
+    //res.end() end communication
     res.end()
     } 
     else if(url === '/about') {
@@ -30,5 +32,7 @@ const server = http.createServer((req, res) => {
     }
 
 })
-
+// server has same spefic ports 
+// example 443
+// in Development, port can use any port
 server.listen(5000)
