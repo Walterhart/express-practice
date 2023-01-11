@@ -4,7 +4,6 @@
 // moved index.html into public with its assets
 // note index.html in public is root and loaded with everything it needs on start
 const express = require('express')
-const path = require('path')
 const app = express()
 
 app.use(express.static('./public'))
