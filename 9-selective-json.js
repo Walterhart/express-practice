@@ -28,11 +28,10 @@ app.get('/api/products', (req,res) => {
 app.get('/api/products/1', (req,res) => {
     const newProducts = products.map((product) =>
     {
-        const singleProduct = products.find((product => product.id === 1))
+        const singleProduct = product.find((product => product.id === 1))
         res.json(singleProduct)
        
     })
-    res.json(newProducts)
 
 })
 
