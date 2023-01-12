@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-// call data module 
+// call data.js module 
 // naming matters!
 // have to be same name as in export
 const {products} = require('./data.js')
@@ -13,7 +13,6 @@ app.get('/', (req,res) =>{
 })
 
 app.all('*', () =>{
-    
     
 })
 
