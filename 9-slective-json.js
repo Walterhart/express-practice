@@ -24,6 +24,7 @@ app.get('/api/products', (req,res) => {
 
 })
 
+// overkill
 app.get('/api/products/1', (req,res) => {
     const newProducts = products.map((product) =>
     {
