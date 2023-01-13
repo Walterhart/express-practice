@@ -44,6 +44,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
+       // axios is perform a get request
+       // must be same name as in 18-form-js-post.js
+       // grabbing people
       const result = document.querySelector('.result')
 
       const fetchPeople = async () => {
@@ -67,7 +70,11 @@
         e.preventDefault()
         const nameValue = input.value
 
+        // async
+        // performing a post request
         try {
+         
+          // axios sending name 
           const { data } = await axios.post('/api/people', { name: nameValue })
           const h5 = document.createElement('h5')
           h5.textContent = data.person
