@@ -35,14 +35,14 @@ app.post('/api/people', (req,res) =>{
     if(!name){
         return res.status(400).json({success:false, msg:'Please provide name value'})
     }
-    res.status(201).json({sucess:false, person:name})
+    res.status(201).json({sucess:true, person:name})
 })
 
 // simple post
 // no accesss and can add to list
 // inorder to add to list we need middleware
 // need body!
-app.post('/login', (req,res) => {
+app.post('/Login', (req,res) => {
     const {name} = req.body
     if(name){
         return res.status(200).send(`Welcome ${name}`)
