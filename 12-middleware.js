@@ -1,4 +1,4 @@
-// middleware
+// selective middleware use
 // express core has middleware
 // function that excute when request to server
 // each middleware has access to res and req objects
