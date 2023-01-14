@@ -19,8 +19,11 @@ Response message:
         example: HTTP/1.1 200 OK
 */
 
-
-
+/*get url: example
+     www.site.com/api/orders  (all orders)
+    or
+     www.site.com/api/:orders  (single orders)
+*/
 // use more than one middleware
 // express core has middleware
 // function that excute when request to server

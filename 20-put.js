@@ -1,6 +1,6 @@
 // PUT update data 
 // use route parameter for put and delete
-// example : www.site.com/api/orders/:id
+// example : www.site.com/api/orders/:id  (specif order + send data)
 // Postman : test APIs, dont need a frontend :D!
 
 
